@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .wrapper {
+    --_gutter: var(--gutter, 1.5rem);
+    --size: 1110px;
+    width: min(100% - var(--_gutter), var(--size));
+    margin-inline: auto;
+
+    @media (min-width: theme('screens.md')) {
+      --gutter: 2.5rem;
+    }
+  }
+}
+
+body {
+  @apply bg-surface-3 text-text lg:text-lg;
+  @apply max-w-[90rem] mx-auto;
+}
