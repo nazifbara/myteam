@@ -8,7 +8,8 @@ export default {
 		colors: {
 			primary: 'hsl(0 87% 73%)',
 			secondary: 'hsl(179 42% 63%)',
-			text: 'hsl(0 0% 100%)',
+			text: 'hsl(var(--color-text) / <alpha-value>)',
+			'text-inverse': 'hsl(var(--color-text-inverse) / <alpha-value>)',
 			surface: {
 				1: 'hsl(179 42% 63%)',
 				2: 'hsl(187 41% 29%)',
