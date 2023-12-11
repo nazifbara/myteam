@@ -33,6 +33,7 @@
     font-weight: theme('fontWeight.bold');
     line-height: 1;
     font-size: var(--_fsize);
+    text-wrap: balance;
   }
 
   .heading--1 {
@@ -97,4 +98,9 @@
 html {
   @apply bg-surface-3 text-text lg:text-lg;
   @apply max-w-[90rem] mx-auto;
+}
+
+a:hover {
+  color: theme('colors.primary');
+  @apply transition-colors;
 }

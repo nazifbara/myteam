@@ -5,21 +5,22 @@ export default {
 		fontFamily: {
 			sans: ['Livvic', 'sans-serif']
 		},
-		colors: {
-			primary: 'hsl(0 87% 73%)',
-			secondary: 'hsl(179 42% 63%)',
-			text: 'hsl(var(--color-text) / <alpha-value>)',
-			'text-inverse': 'hsl(var(--color-text-inverse) / <alpha-value>)',
-			surface: {
-				1: 'hsl(179 42% 63%)',
-				2: 'hsl(187 41% 29%)',
-				3: 'hsl(186 98% 17%)',
-				4: 'hsl(186 100% 14%)',
-				5: 'hsl(186 96% 10%)',
-				6: 'hsl(186 100% 8%)'
+		extend: {
+			colors: {
+				primary: 'hsl(0 87% 73%)',
+				secondary: 'hsl(179 42% 63%)',
+				text: 'hsl(var(--color-text) / <alpha-value>)',
+				'text-inverse': 'hsl(var(--color-text-inverse) / <alpha-value>)',
+				surface: {
+					1: 'hsl(179 42% 63%)',
+					2: 'hsl(187 41% 29%)',
+					3: 'hsl(186 98% 17%)',
+					4: 'hsl(186 100% 14%)',
+					5: 'hsl(186 96% 10%)',
+					6: 'hsl(186 100% 8%)'
+				}
 			}
-		},
-		extend: {}
+		}
 	},
 	plugins: []
 }
