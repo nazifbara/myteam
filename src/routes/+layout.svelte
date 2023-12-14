@@ -8,7 +8,7 @@
 	const closeMenu = () => (open = false)
 </script>
 
-<header class="my-11 md:my-16">
+<header class="mt-11 mb-20 md:mt-16 md:mb-28 lg:mb-32">
 	<div class="wrapper flex gap-20">
 		<img alt="myteam logo" src="/assets/logo.svg" />
 		{#if open}
