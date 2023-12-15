@@ -1,3 +1,8 @@
+<script lang="ts">
+	import { Icon } from '$lib/components'
+	import { home } from '$lib/config'
+</script>
+
 <section class="lg:bg-[url('/assets/bg-pattern-home-1.svg')] bg-no-repeat bg-[left_-100px_top_0px]">
 	<article
 		class={`
@@ -25,4 +30,32 @@
 			tapping into the abundance of global talent. We're about to change that.
 		</p>
 	</article>
+</section>
+
+<section
+	class="bg-surface-5 py-16 bg-[url('/assets/bg-pattern-home-3.svg')] bg-no-repeat bg-[right_-100px_top_0px] lg:py-32 lg:bg-[right_-100px_bottom_0px]"
+>
+	<div class="wrapper max-w-xl grid gap-14 md:mb-16 lg:grid-cols-2 lg:max-w-none">
+		<h2
+			class="heading heading--2 before:block before:mb-8 before:h-[4px] before:w-[50px] before:bg-primary lg:before:md:mb-14"
+		>
+			Build & manage distributed teams like no one else.
+		</h2>
+
+		<ul class="grid gap-12">
+			{#each home.features as feature}
+				<li
+					class="text-center grid gap-4 justify-items-center md:grid-cols-[auto_1fr] md:gap-6 md:text-left"
+				>
+					<Icon name={feature.iconName} />
+					<article>
+						<h3 class="heading heading--3 text-primary mb-2 md:mb-4">{feature.title}</h3>
+						<p>
+							{feature.description}
+						</p>
+					</article>
+				</li>
+			{/each}
+		</ul>
+	</div>
 </section>
