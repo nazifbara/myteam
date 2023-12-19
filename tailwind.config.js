@@ -19,6 +19,10 @@ export default {
 					5: 'hsl(186 96% 10%)',
 					6: 'hsl(186 100% 8%)'
 				}
+			},
+			fontSize: {
+				'body-1': '1.125rem',
+				'body-2': '.9375rem'
 			}
 		}
 	},

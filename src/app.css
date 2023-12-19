@@ -21,6 +21,10 @@
     }
   }
 
+  .section-wrapper {
+    @apply wrapper max-w-xl lg:max-w-none;
+  }
+
   .light {
     --color-text: 186 100% 8%;
     --color-text-inverse: 0 0% 100%;
@@ -60,6 +64,10 @@
     --fsize: 1.125rem;
   }
 
+  .job-title {
+    @apply font-medium text-[.8125rem] italic;
+  }
+
   .btn {
     --_bg: var(--bg, transparent);
     --_color: var(--color, theme(colors.text));
@@ -96,7 +104,7 @@
 }
 
 html {
-  @apply bg-surface-3 text-text lg:text-lg;
+  @apply bg-surface-3 text-text text-body-2 lg:text-body-1;
   @apply max-w-[90rem] mx-auto;
 }
 
