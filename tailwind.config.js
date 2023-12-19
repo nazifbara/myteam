@@ -22,7 +22,7 @@ export default {
 			},
 			fontSize: {
 				'body-1': '1.125rem',
-				'body-2': '.9375rem'
+				'body-2': '.938rem'
 			}
 		}
 	},

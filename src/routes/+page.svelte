@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Icon } from '$lib/components'
+	import { Icon, ContactBanner } from '$lib/components'
 	import { home } from '$lib/config'
 </script>
 
@@ -101,3 +101,5 @@
 		</ul>
 	</div>
 </section>
+
+<ContactBanner />

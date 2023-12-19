@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply bg-surface-3 text-text text-body-2 lg:text-body-1;
+  @apply max-w-[90rem] mx-auto;
+}
+
+a:not(.btn):hover {
+  color: theme('colors.primary');
+  @apply transition-colors;
+}
+
 @layer base {
   :root {
     --color-text: 0 0% 100%;
@@ -34,6 +44,8 @@
 @layer components {
   .heading {
     --_fsize: var(--fsize, inherit);
+
+    color: theme('colors.text');
     font-weight: theme('fontWeight.bold');
     line-height: 1;
     font-size: var(--_fsize);
@@ -73,6 +85,8 @@
     --_color: var(--color, theme(colors.text));
     --_border: var(--border, var(--_color));
     
+    display: grid;
+    place-content: center;
     border: 2px solid var(--_border);
     border-radius: theme('borderRadius.full');
     color: var(--_color);
@@ -101,14 +115,4 @@
     --border: theme('colors.text');
     --bg-hover: theme('colors.secondary');
   }
-}
-
-html {
-  @apply bg-surface-3 text-text text-body-2 lg:text-body-1;
-  @apply max-w-[90rem] mx-auto;
-}
-
-a:hover {
-  color: theme('colors.primary');
-  @apply transition-colors;
 }
