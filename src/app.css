@@ -12,6 +12,11 @@ a:not(.btn):hover {
   @apply transition-colors;
 }
 
+a:hover path {
+  fill: theme('colors.primary');
+  @apply transition-colors;
+}
+
 @layer base {
   :root {
     --color-text: 0 0% 100%;

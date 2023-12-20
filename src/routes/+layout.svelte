@@ -51,3 +51,49 @@
 </header>
 
 <slot />
+
+<footer class="bg-surface-6 py-16">
+	<div
+		class={`
+		wrapper 
+		text-center 
+		grid 
+		gap-6 
+		justify-items-center
+		md:grid-rows-[repeat(2,_auto)]
+		md:grid-cols-[repeat(2,_auto)]
+		md:text-right
+		md:justify-between
+		lg:grid-cols-[repeat(3,_auto)]
+	`}
+	>
+		<div class="grid gap-6 justify-items-center lg:row-span-2">
+			<img class="w-[96px] lg:w-[160px]" alt="myteam logo" src="/assets/logo.svg" />
+			<nav class="flex gap-6">
+				<a href="/">home</a>
+				<a href="/about">about</a>
+			</nav>
+		</div>
+
+		<ul class="text-text/60 lg:row-span-2">
+			<li>987 Hillcrest Lane</li>
+			<li>Irvine, CA</li>
+			<li>California 92714</li>
+			<li>Call Us: 949-833-7432</li>
+		</ul>
+
+		<nav class="flex gap-4 lg:justify-self-end">
+			<a href="/#" aria-label="facebook">
+				<Icon name="facebook" />
+			</a>
+			<a href="/#" aria-label="pinterest">
+				<Icon name="pinterest" />
+			</a>
+			<a href="/#" aria-label="linkedin">
+				<Icon name="linkedin" />
+			</a>
+		</nav>
+
+		<p class="text-text/60">Copyright 2020. All Rights Reserved</p>
+	</div>
+</footer>
