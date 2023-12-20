@@ -24,7 +24,10 @@
 				flex-col flex-1 items-start gap-6 
 				fixed top-0 right-0 bottom-0
 				w-[80vw] max-w-[255px]
-
+				bg-[url('/assets/bg-pattern-about-1-mobile-nav-1.svg')] 
+				bg-no-repeat bg-[bottom_right_-100px]
+				
+				md:bg-none
 				md:bg-transparent
 				md:flex md:flex-row md:items-center
 				md:relative md:gap-10
