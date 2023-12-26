@@ -36,6 +36,10 @@ a:hover path {
     }
   }
 
+  .p-section {
+    @apply py-36 md:py-24 lg:py-36
+  }
+
   .section-wrapper {
     @apply wrapper max-w-xl lg:max-w-none;
   }

@@ -1,35 +1,16 @@
 <script lang="ts">
-	import { Icon, ContactBanner } from '$lib/components'
+	import { Icon, ContactBanner, PageHero, Avatar } from '$lib/components'
 	import { home } from '$lib/config'
 </script>
 
 <section class="lg:bg-[url('/assets/bg-pattern-home-1.svg')] bg-no-repeat bg-[left_-100px_top_0px]">
-	<article
-		class={`
-			bg-[url('/assets/bg-pattern-home-2.svg')] bg-no-repeat bg-bottom
-			wrapper
-			pb-52
-			text-center
-			max-w-[400px]
-			md:pb-60
-			md:max-w-[550px]
-			lg:max-w-none
-			lg:flex
-			lg:gap-8
-			lg:text-left
-			lg:bg-right-bottom
-		`}
-	>
-		<h1 class="heading heading--1 mb-5 lg:mb-0 lg:flex-[3]">
+	<PageHero>
+		<svelte:fragment slot="heading">
 			Find the best <span class="text-primary">talent</span>
-		</h1>
-		<p
-			class="lg:flex-[2] lg:grid lg:content-between lg:before:block lg:before:h-[4px] lg:before:w-[50px] lg:before:bg-surface-1"
-		>
-			Finding the right people and building high performing teams can be hard. Most companies aren't
-			tapping into the abundance of global talent. We're about to change that.
-		</p>
-	</article>
+		</svelte:fragment>
+		Finding the right people and building high performing teams can be hard. Most companies aren't tapping
+		into the abundance of global talent. We're about to change that.
+	</PageHero>
 </section>
 
 <section
@@ -77,7 +58,7 @@
 		<ul class="grid gap-12 lg:grid-cols-3">
 			{#each home.testimonies as t}
 				<li>
-					<article class="grid gap-4 pt-10 relative z-10">
+					<article class="grid gap-4 justify-items-center pt-10 relative z-10">
 						<div>
 							<h3 class="heading heading--3 text-secondary mb-1">
 								{t.name}
@@ -85,13 +66,10 @@
 							<p class="job-title">{t.position}</p>
 						</div>
 
-						<p class="row-start-1 text-body-2">{t.text}</p>
+						<blockquote class="row-start-1 text-body-2">{t.text}</blockquote>
 
-						<picture
-							class="h-16 aspect-square rounded-full overflow-hidden border-2 border-secondary mx-auto"
-						>
-							<img src={t.image} alt={t.name} />
-						</picture>
+						<Avatar src={t.image} alt={t.name} />
+
 						<span class="absolute top-0 -z-10 right-1/2 translate-x-1/2"
 							><Icon name="quotes" /></span
 						>

@@ -7,8 +7,12 @@ import quotes from './quotes.svelte'
 import facebook from './facebook.svelte'
 import linkedin from './linkedin.svelte'
 import pinterest from './pinterest.svelte'
+import cross from './cross.svelte'
+import twitter from './twitter.svelte'
 
 export const iconsMap = {
+	twitter,
+	cross,
 	facebook,
 	linkedin,
 	pinterest,
