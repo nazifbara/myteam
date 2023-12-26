@@ -114,3 +114,22 @@ export const about: {
 		}
 	]
 }
+
+export const contact: {
+	askAbout: { iconName: IconName; description: string }[]
+} = {
+	askAbout: [
+		{
+			iconName: 'person',
+			description: 'The quality of our talent network'
+		},
+		{
+			iconName: 'cog',
+			description: 'Usage & implementation of our software'
+		},
+		{
+			iconName: 'chart',
+			description: 'How we help drive innovation'
+		}
+	]
+}

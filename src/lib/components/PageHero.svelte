@@ -20,8 +20,8 @@
 			lg:bg-right-bottom
 	`
 
-	const headingClass = `heading heading--1 mb-5 lg:mb-0 ${
-		isInHomePage ? 'lg:flex-[3]' : 'lg:flex-[2]'
+	const headingClass = `heading mb-5 lg:mb-0 ${
+		isInHomePage ? 'lg:flex-[3] heading--1' : 'lg:flex-[2] heading--1-small'
 	}`
 	const bodyClass = ` lg:grid lg:content-between lg:before:block lg:before:h-[4px] lg:before:w-[50px] ${
 		!isInHomePage

@@ -73,6 +73,14 @@ a:hover path {
     }
   }
 
+  .heading--1-small {
+    --fsize: 2.5rem;
+
+    @media (min-width: theme('screens.md')) {
+      --fsize: 4rem;
+    }
+  }
+
   .heading--2 {
     --fsize: 2rem;
 

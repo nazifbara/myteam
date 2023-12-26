@@ -8,7 +8,7 @@
 	const closeMenu = () => (open = false)
 </script>
 
-<header class="mt-11 mb-20 md:mt-16 md:mb-28 lg:mb-32">
+<header class="mt-11 mb-20 md:mt-16 md:mb-28">
 	<div class="wrapper flex gap-20">
 		<img alt="myteam logo" src="/assets/logo.svg" />
 		{#if open}
@@ -40,7 +40,7 @@
 			</button>
 			<a href="/">home</a>
 			<a href="/about">about</a>
-			<button class="btn md:ml-auto">contact us</button>
+			<a href="/contact" class="btn md:ml-auto">contact us</a>
 		</nav>
 
 		<button
@@ -53,7 +53,9 @@
 	</div>
 </header>
 
-<slot />
+<main>
+	<slot />
+</main>
 
 <footer class="bg-surface-6 py-16">
 	<div
