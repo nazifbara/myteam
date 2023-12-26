@@ -2,7 +2,7 @@
 
 ![](./screenshot.jpg)
 
-A landing page written in SvelteKit that showases a team's capabilities.
+A landing page written in SvelteKit that showcases a team's capabilities.
 
 - [Live site URL here](https://myteam-svelte.netlify.app/)
 
