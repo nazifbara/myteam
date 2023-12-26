@@ -38,9 +38,9 @@
 			<button on:click={closeMenu} aria-label="close nav menu" class="ml-auto md:hidden">
 				<Icon name="close" />
 			</button>
-			<a href="/">home</a>
-			<a href="/about">about</a>
-			<a href="/contact" class="btn md:ml-auto">contact us</a>
+			<a href="/" on:click={closeMenu}>home</a>
+			<a href="/about" on:click={closeMenu}>about</a>
+			<a href="/contact" class="btn md:ml-auto" on:click={closeMenu}>contact us</a>
 		</nav>
 
 		<button
